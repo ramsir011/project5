@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+<body>
+   <nav class="navBar">
+       <div class="navHeader">
+           <img src="1.png" class="logo" width="10%" alt="">
+           <div class="navBtn">
+               <div class="bar bar1"></div>
+               <div class="bar bar2"></div>
+               <div class="bar bar3"></div>
+           </div>
+       </div>
+       <ul class="navLink">
+          <li>home</li>
+          <li>css</li>
+          <li>html</li>
+          <li>java Script</li>
+       </ul>
+       <header></header>
+   </nav> 
+   <script>
+    var navBtn = document.querySelector('.navBtn');
+    var navLink = document.querySelector('.navLink');
+    
+    navBtn.addEventListener('click',onF);
+    function onF(){
+      
+            let value = navLink.classList.contains('col');
+            if(value){
+                navLink.classList.remove('col');
+                navBtn.classList.remove('change');
+            }
+            else{
+                navLink.classList.add('col');
+                navBtn.classList.add('change');
+            }
+        
+        
+    }
+
+
+   </script>
+</body>
+</html>
